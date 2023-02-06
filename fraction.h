@@ -103,7 +103,7 @@ FRAC frac_array_mean2(FRAC* arr, int size)		//returns the arithmetic mean of an 
 }
 FRAC* frac_array_invert1(int* arr, int size)	//returns 1/*arr as an array of FRACs
 {
-	FRAC *result = (FRAC*)malloc(size*sizeof(FRAC));
+	FRAC* result = (FRAC*)malloc(size*sizeof(FRAC));
 	int i;
 	for(i=0;i<size;i++)
 		result[i]=frac_create(1,arr[i]);
@@ -111,7 +111,7 @@ FRAC* frac_array_invert1(int* arr, int size)	//returns 1/*arr as an array of FRA
 }
 FRAC* frac_array_invert2(FRAC* arr, int size)	//returns the inverse of *arr as an array of FRACs
 {
-	FRAC *result = (FRAC*)malloc(size*sizeof(FRAC));
+	FRAC* result = (FRAC*)malloc(size*sizeof(FRAC));
 	int i;
 	for(i=0;i<size;i++)
 		result[i]=frac_create(arr[i].denominator,arr[i].numerator);
