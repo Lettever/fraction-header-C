@@ -14,7 +14,7 @@ void frac_reduce(FRAC* num)						//reduces a fraction
 {
 	int a = abs(num->numerator);
 	int b = abs(num->denominator);
-	int min = abs((a<b)?a:b), i;
+	int min = (a<b)?a:b, i;
 	for(i = min; i >= 1; i--)
 		if(a%i == 0 && b%i == 0)
 			break;
