@@ -83,11 +83,6 @@ FRAC frac_pow(FRAC num, int n)					//returns pow(num1,n) as a FRAC
 	FRAC result = frac_create(pow(num.numerator,n),pow(num.denominator,n));
 	return result;
 }
-FRAC frac_root(FRAC num, int n)					//return pow(num, 1/n) as a FRAC, if pow(num, 1/n) != FRAC it returns a rough aproximation
-{
-	FRAC result = frac_create(pow(num.numerator,(float)1/n), pow(num.denominator,(float)1/n));
-	return result;
-}
 FRAC frac_array_mean1(int* arr, int size)		//returns the arithmetic mean of an array of ints as a FRAC
 {
 	int i, sum=0;
